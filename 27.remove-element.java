@@ -2,6 +2,7 @@
  * @lc app=leetcode id=26 lang=java
  *
  * [27] Remove Element
+ * [Array/ Easy]
  */
 
 // @lc code=start

@@ -2,6 +2,7 @@
  * @lc app=leetcode id=35 lang=java
  *
  * [35] Search Insert Position
+ * [Array/ Easy]
  */
 // [1,3,5,6]
 // @lc code=start

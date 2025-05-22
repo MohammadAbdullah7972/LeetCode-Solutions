@@ -2,6 +2,7 @@
  * @lc app=leetcode id=66 lang=java
  *
  * [66] Plus One
+ * [Array/ Easy]
  */
 
 // @lc code=start
