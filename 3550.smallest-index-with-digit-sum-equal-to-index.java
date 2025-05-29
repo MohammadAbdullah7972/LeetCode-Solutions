@@ -7,7 +7,7 @@
 // @lc code=start
 class Solution {
     public int smallestIndex(int[] nums) {
-        
+        return -1;   
     }
 }
 // @lc code=end

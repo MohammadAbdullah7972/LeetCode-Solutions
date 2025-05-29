@@ -5,6 +5,10 @@
  */
 
 // @lc code=start
+
+import java.lang.classfile.components.ClassPrinter.ListNode;
+import java.util.LinkedList;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -18,6 +22,7 @@
 class Solution {
     public ListNode reverseList(ListNode head) {
         
+        return head;
     }
 }
 // @lc code=end
