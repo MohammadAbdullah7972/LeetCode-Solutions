@@ -22,21 +22,28 @@ import java.util.List;
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        ListNode cur = head;
-        ListNode prev = null;
-
-        if (cur == null || cur.next == null) {
+        if (head == null || head.next == null) {
             return head;
         }
-
-        while (cur != null) {
-            ListNode tempCon = cur.next;
-            cur.next = prev;
-            prev = cur;
-            cur = tempCon;
-
-        }
+        ListNode prev = reverseList(head.next);
+        head.next.next = head;
+        head.next = null;
         return prev;
+        // ListNode cur = head;
+        // ListNode prev = null;
+
+        // if (cur == null || cur.next == null) {
+        //     return head;
+        // }
+
+        // while (cur != null) {
+        //     ListNode tempCon = cur.next;
+        //     cur.next = prev;
+        //     prev = cur;
+        //     cur = tempCon;
+
+        // }
+        // return prev;
     }
 }
 // @lc code=end
