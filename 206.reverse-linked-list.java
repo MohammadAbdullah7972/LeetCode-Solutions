@@ -8,6 +8,7 @@
 
 import java.lang.classfile.components.ClassPrinter.ListNode;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Definition for singly-linked list.
@@ -21,8 +22,21 @@ import java.util.LinkedList;
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        rttht;
-        return head;
+        ListNode cur = head;
+        ListNode prev = null;
+
+        if (cur == null || cur.next == null) {
+            return head;
+        }
+
+        while (cur != null) {
+            ListNode tempCon = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = tempCon;
+
+        }
+        return prev;
     }
 }
 // @lc code=end
