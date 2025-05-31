@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=234 lang=java
+ * @lc app=leetcode id=203 lang=java
  *
- * [234] Palindrome Linked List
+ * [203] Remove Linked List Elements
  */
 
 // @lc code=start
@@ -16,8 +16,8 @@
  * }
  */
 class Solution {
-    public boolean isPalindrome(ListNode head) {
-        return head;
+    public ListNode removeElements(ListNode head, int val) {
+        
     }
 }
 // @lc code=end
