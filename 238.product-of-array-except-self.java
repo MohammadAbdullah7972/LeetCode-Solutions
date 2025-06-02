@@ -57,7 +57,7 @@ class Solution {
         int suffix = 1; // Initialize suffix product
         for(int i=n-1; i>=0; i--){
             ansNums[i] = ansNums[i] * suffix; // Multiply prefix with suffix
-            suffix = suffix * nums[i]; // Multiply prefix with suffix
+            suffix = suffix * nums[i]; // Update suffix product for next iteration
         }
 
         return ansNums;
