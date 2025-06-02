@@ -30,8 +30,14 @@ class Solution {
             } 
             cur = cur.next;
         } 
-        cur.next = list1==null?list2:list1;
-        return dummy
+        
+        if (list1 == null) {
+            return list2;
+        } else{
+            return list1;
+        }
+        // cur.next = list1==null?list2:list1;
+        return dummy;
     }
 }
 // @lc code=end

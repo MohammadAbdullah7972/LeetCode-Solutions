@@ -5,6 +5,10 @@
  */
 
 // @lc code=start
+
+import java.lang.classfile.components.ClassPrinter.ListNode;
+import java.util.Stack;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -17,7 +21,21 @@
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        return head;
+        Stack<Integer> stack = new Stack<>();
+        ListNode cur = head;
+
+        while (cur != null) {
+            stack.push(cur);
+            cur = cur.next;
+        }
+
+        while (head != null) {
+            if (head.val != stack.pop()) {
+                return false;
+            }
+            head = head.next;
+        }
+        return true;
     }
 }
 // @lc code=end

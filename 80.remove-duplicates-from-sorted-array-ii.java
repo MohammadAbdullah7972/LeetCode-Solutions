@@ -47,7 +47,6 @@ class Solution {
             }
             // Else: skip the element (would make 3+ duplicates)
         }
-        
         return slow; // New length
     }
 }
